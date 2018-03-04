@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myFirstApp">
   <head>
     <meta charset="utf-8">
+    <script src="angular.min.js"> </script>
+    <script src="app.js"></script>
     <title>First Angular JS</title>
   </head>
   <body>
-    <h1>Hello Angular JS !!!! Very Exsited to this page</h1>
+    <h1>Hello Angular JS !!!!</h1>
+    <div ng-controller="MyFirstController">
+      <h1>{{think1()}}</h1>
+      <input type="text" ng-model="name"></input>
+      <h3>name type is :{{name}}</h3>
+    </div>
   </body>
 </html>
